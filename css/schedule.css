@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-schedule {
+    /* background-color: #14213d00; */
+    width: auto;
+    /* min-height: 100%; */
+    /* margin-top: 5rem; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 0 10%;
+    padding-top: 5rem;
+    margin: auto;
+}
+
+.schedule-content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.schedule-heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 9px;
+    overflow: hidden;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color: #fca311;
+    margin-bottom: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+li {
+    /* background: none; */
+    list-style: none;
+}
+
+.time-link {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2em;
+    color: white;
+    /* display: none; */
+    line-height: 2rem;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.timeline-container {
+    /* margin: 0 3rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-container li::after {
+    content: '';
+    position: absolute;
+    /* left: 50%; */
+    width: 100%;
+    z-index: 4;
+    /* top: 81%; */
+    bottom: 21%;
+    height: 3px;
+    /* background: #6AB6BB; */
+    background: #fca311;
+}
+
+.timeline-container li {
+    overflow-x: unset;
+    position: relative;
+}
+
+.timeline-container .time-link:nth-child(1):after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 12.5px);
+    width: 25px;
+    bottom: 2%;
+    z-index: 4;
+    height: 25px;
+    background: #fca311;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #e9ce2133;
+}
+
+.content {
+    display: flex;
+    color: white;
+    font-size: 1.4em;
+}
+
+.content h4 {
+    opacity: 0.8;
+}
+
+.content p {
+    opacity: 0.8;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.schedule__content__swiper {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.schedule__content__swiper h4 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.schedule__content__swiper p {
+    opacity: 0.7;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.link-border {
+    /* background: none; */
+    /* text-decoration: underline; */
+    color: rgb(4, 212, 156);
+    font-size: 25px;
+    display: block;
+    animation: fontChange;
+    animation-duration: 0.5s;
+}
+
+.link-border:nth-child(1):after {
+    content: '' !important;
+    position: absolute !important;
+    left: calc(50% - 12.5px) !important;
+    width: 25px !important;
+    bottom: 2% !important;
+    height: 25px !important;
+    background: #109ca5 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 0 3px rgb(33 233 200 / 20%) !important;
+}
+
+@keyframes fontChange {
+    from {
+        font-size: 1.2em;
+    }
+    to {
+        font-size: 1.5em;
+    }
+}
+
+.appear-anim {
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding: 1rem;
+    animation: appear;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    transition: 0.4s;
+}
+
+.time-content {
+    display: none;
+}
+
+h3 {
+    margin-bottom: 0rem;
+    min-height: 50px;
+    overflow-y: hidden;
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.arrow {
+    width: 50px;
+    padding: 0.3em;
+    margin-inline: 1.5rem;
+}
+
+.arrow:hover {
+    width: 45px;
+    cursor: pointer;
+}
+
+.swiper {
+    color: white;
+    width: 95%;
+    /* margin: 0 4%; */
+    display: none;
+}
+
+.swiper .swiper-wrapper {
+    width: 90%;
+    text-align: justify;
+    margin: 0 4%;
+}
+
+.swiper-wrapper .swiper-slide h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.swiper-pagination {
+    position: unset !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffffff !important;
+    opacity: 0.8 !important;
+    height: 10px !important;
+    width: 10px !important;
+    /* margin: 16px 16px; */
+    /* padding: 6px 6px; */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fca311 !important;
+}
+
+@media (min-width: 822px) {
+    .arrow {
+        display: none;
+    }
+    .time-link {
+        display: block;
+        margin-inline: auto;
+    }
+    .time-link:hover {
+        cursor: pointer;
+        color: rgb(215, 215, 9);
+    }
+    @keyframes appearSlowly {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    .link-border:hover {
+        color: rgb(4, 212, 156);
+    }
+    .time-link {
+        margin-inline: 1.5rem;
+    }
+    /* .timeline-container{
+		justify-content: space-around;
+	} */
+}
+
+/* Swiper content */
+
+/* Swiper content */
+
+@media (max-width: 800px) {
+    .timeline-container {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .swiper {
+        display: block;
+    }
+    .container-schedule {
+        width: 100%;
+        margin: 0.1rem;
+        /* margin-bottom: 2rem; */
+        padding: 1rem;
+        padding-bottom: 0;
+        padding-top: 5rem;
+        height: max-content;
+    }
+    .swiper-slide h3 {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    .schedule-heading {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        letter-spacing: 9px;
+    }
+    .link-border {
+        font-size: 1.5em;
+        width: 120px;
+        display: block;
+    }
+    .arrow {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .time-link {
+        text-align: center;
+    }
+    .content {
+        text-align: justify;
+        display: none;
+        padding: 0 5%;
+    }
+    .appear-anim h3 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
