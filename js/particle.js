@@ -61,61 +61,7 @@
                 // instantiate a loader
                 var loader = new THREE.TextureLoader();
 
-                // load a resource
-                // loader.load(
-                // 	'',
-
-                // 	// onLoad callback
-                // 	function (texture) {
-                // 		// in this example we create the material when the texture is loaded
-                // 		// Get data from an image
-                // 		imagedata = getImageData(texture.image);
-
-                // 		// Immediately use the texture for material creation
-                // 		var geometry = new THREE.Geometry();
-                // 		var material = new THREE.PointsMaterial({
-                // 			size: 3,
-                // 			color: 0xffffff,
-                // 			sizeAttenuation: false,
-                // 		});
-
-                // 		for (var y = 0, y2 = imagedata.height; y < y2; y += 2) {
-                // 			for (var x = 0, x2 = imagedata.width; x < x2; x += 2) {
-                // 				if (imagedata.data[x * 4 + y * 4 * imagedata.width + 3] > 128) {
-                // 					// The array of vertices holds the position of every vertex in the model.
-                // 					var vertex = new THREE.Vector3();
-
-                // 					vertex.x = Math.random() * 1000 - 500;
-                // 					vertex.y = Math.random() * 1000 - 500;
-                // 					vertex.z = -Math.random() * 500;
-
-                // 					vertex.destination = {
-                // 						x: x - imagedata.width / 2,
-                // 						y: -y + imagedata.height / 2,
-                // 						z: 0,
-                // 					};
-
-                // 					vertex.speed = Math.random() / 200 + 0.015;
-
-                // 					geometry.vertices.push(vertex);
-                // 				}
-                // 			}
-                // 		}
-                // 		particles = new THREE.Points(geometry, material);
-
-                // 		scene.add(particles);
-                // 	},
-
-                // 	// onProgress callback currently not supported
-                // 	undefined,
-
-                // 	// onError callback
-                // 	function (err) {
-                // 		console.error('An error happened.');
-                // 	}
-                // );
-
-                // add particle rotation
+               
                 particleRotation = new THREE.Object3D();
                 scene.add(particleRotation);
                 var geometryPR = new THREE.TetrahedronGeometry(2, 0),
