@@ -1,126 +1,131 @@
 #past-sponsors {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #sponsors--section {
-    /* background-color: white; */
-    padding-top: 5rem;
+  /* background-color: white; */
+  padding-top: 5rem;
 }
 
 .sponsors {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 310px));
-    column-gap: 30px;
-    row-gap: 40px;
-    overflow: hidden;
-    padding-left: 7rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 40px;
+  overflow: hidden;
+  padding-left: 7rem;
 }
 
 .heading--sponsor {
-    font-size: 3.5rem;
-    /* margin-top: 2rem; */
-    color: #fca311;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 9px;
+  font-size: 3.5rem;
+  /* margin-top: 2rem; */
+  color: #fca311;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 9px;
 }
 
 .sponsors--i img {
-    width: 60%;
-    transition: all 0.5s;
-    height: auto;
-    cursor: pointer;
-    object-fit: cover;
-    object-position: center;
+  width: 60%;
+  transition: all 0.5s;
+  height: auto;
+  cursor: pointer;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .sponsors--i {
-    display: contents;
-    overflow: hidden;
-    height: auto;
+  display: contents;
+  overflow: hidden;
+  height: auto;
 }
 
 .sponsors--i img:hover {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 .sponsors--i .show {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .slider {
-    max-width: 100rem;
-    height: 11rem;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+  max-width: 100rem;
+  height: 11rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .slide {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 11rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 1s;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
 }
 
 .sponsors--i--p {
-    overflow: hidden;
-    height: auto;
+  overflow: hidden;
+  height: auto;
 }
 
 .sponsors--i--p img {
-    width: 83%;
-    /* display: contents; */
-    transition: all 0.5s;
-    height: auto;
-    cursor: pointer;
-    object-fit: cover;
-    object-position: center;
-    transition: all 0.5s;
+  width: 83%;
+  /* display: contents; */
+  transition: all 0.5s;
+  height: auto;
+  cursor: pointer;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  transition: all 0.5s;
 }
 
 .sponsors--i--p img:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .sponsors--p {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 #--hu--spon {
-    width: 50%;
+  width: 50%;
 }
 
 @media screen and (max-width: 800px) {
-    .sponsors {
-        margin-top: 3rem;
-        padding: 0;
-    }
-    .sponsors--i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .heading--sponsor {
-        font-size: 2.5rem;
-    }
-    #past-sponsors .heading--sponsor {
-        margin-top: 4rem;
-    }
+  .sponsors {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .sponsors--i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading--sponsor {
+    font-size: 2.5rem;
+  }
+  #past-sponsors .heading--sponsor {
+    margin-top: 4rem;
+  }
 }
